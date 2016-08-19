@@ -18,10 +18,8 @@ public class Solution {
         			nums[now_head + 1] = nums[i];
 				}
 				now_head ++;
-				i ++;
-			} else {
-				i ++;
 			}
+        	i ++;
 		}
         
         for (int temp = 0; temp < nums.length; temp++) {
