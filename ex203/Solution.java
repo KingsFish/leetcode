@@ -4,9 +4,17 @@ public class Solution {
 	
 	public static void main(String[] args) {
 		ListNode a = new ListNode(2);
-		System.out.println(removeElements_v1(a, 2));
+		ListNode b = new ListNode(3);
+		ListNode c = new ListNode(4);
+		a.next = b;
+		b.next = c;
+		ListNode head = removeElements_v1(a, 4);
+		while (head != null) {
+			System.out.print(head.val + ",");
+			head = head.next;
+		}
 	}
-	
+
 	public static ListNode removeElements(ListNode head, int val) {
         ListNode newHead = new ListNode(0);
         newHead.next = head;
@@ -40,6 +48,4 @@ public class Solution {
         }
         return newHead.next;
     }
-	
-	
 }

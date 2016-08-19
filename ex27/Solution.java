@@ -1,20 +1,24 @@
-package leetcode.ex283;
+package leetcode.ex27;
 
 public class Solution {
 	
 	public static void main(String[] args) {
-		int [] a = new int[]{0,12,0,3,12};
-		moveZeroes(a);
-		for (int i : a) {
-			System.out.print(i + ",");
-		}
+		Solution solution = new Solution();
+		int [] nums = new int[]{1,2,3,4};
+		System.out.println("length:" + solution.removeElement(nums, 2));
 	}
-	
-	public static void moveZeroes(int[] nums) {
-		int val = 0;
-        if (nums.length == 0 || nums.length == 1) {
-			return;
-		} 
+
+	public int removeElement(int[] nums, int val) {
+		if (nums.length == 0) {
+			return 0;
+		} else if (nums.length == 1) {
+			if (nums[0] == val) {
+				return 0;
+			} else {
+				return 1;
+			}
+		}
+		int size = 0;
 		int no_val_position = 0;
 		int val_position = 0;
 		while (no_val_position < nums.length && val_position < nums.length) {
@@ -43,5 +47,14 @@ public class Solution {
 				no_val_position ++;
 			}
 		}
+		for (; size < nums.length; size++) {
+			if (nums[size] == val) {
+				break;
+			}
+		}
+		for (int i : nums) {
+			System.out.print(i + ",");
+		}
+		return size;
     }
 }

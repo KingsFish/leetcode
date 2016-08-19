@@ -1,14 +1,24 @@
 package leetcode.ex61;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Solution {
 	
 	public static void main(String[] args) {
+		
 		ListNode head = new ListNode(1);
 		ListNode a = new ListNode(2);
+		ListNode b = new ListNode(3);
+		ListNode c = new ListNode(4);
+		ListNode d = new ListNode(5);
 		head.next = a;
-		a.next = null;
+		a.next = b;
+		b.next = c;
+		c.next = d;
+		d.next = null;
 		
-		ListNode temp = rotateRight(head, 2);
+		ListNode temp = rotateRight(c, 2);
 		while (temp != null) {
 			System.out.print(temp.val + ",");
 			temp = temp.next;
@@ -16,36 +26,25 @@ public class Solution {
 	}
 
 	public static ListNode rotateRight(ListNode head, int k) {
+		int size = 0;
         ListNode head_bak = head;
-        int size = 1;
-        if (head == null || head.next == null) {
-			return head;
-		}
-        while (head.next != null) {
-        	size ++ ;
+        while (head != null) {
+        	size ++;
         	head = head.next;
+		}
+        if (size <= 1) {
+			return head_bak;
 		}
         k = k % size;
-        if (k <= 0) {
-			return head;
-		}
-        ListNode last = head;
-        ListNode last_k = null;;
+        ListNode [] stack = new ListNode[size];
         head = head_bak;
-        
-        int i = 0;
-        while (head != null) {
-        	if (i == size - k - 1) {
-        		last_k = head;
-        		head = head.next;
-        		break;
-			}
-        	i ++;
-        	head = head.next;
+        for (int i = 0; i < size; i++) {
+			stack[i] = head;
+			head = head.next;
 		}
-        last.next = head_bak;
-        last_k.next = null;
         
-        return head;
+        stack[size - 1].next = stack[0];
+        stack[size - k - 1].next = null;
+        return stack[(size - k) % size];
     }
 }
