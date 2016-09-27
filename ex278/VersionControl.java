@@ -2,7 +2,7 @@ package leetcode.ex278;
 
 public class VersionControl {
 
-	private int guessVersion = 6;
+	private int guessVersion = 0;
 	
 	/**
 	 * @author Fish
