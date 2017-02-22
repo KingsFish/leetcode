@@ -14,4 +14,8 @@ public class Solution {
         }
         return num;
     }
+	public int addDigits_v2(int num) {
+		return 1 + ((num - 1) % 9);
+	}
+	
 }
