@@ -1,7 +1,5 @@
 package leetcode.ex231;
 
-import cn.fish.Test;
-
 public class Solution {
 	
 	public static void main(String[] args) {
