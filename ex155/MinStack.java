@@ -1,47 +1,37 @@
 package leetcode.ex155;
 
+import java.util.Stack;
+
 public class MinStack {
 	
-	private final int DEFAULT_CAPACITY = 10;
-	int [] stack;
-	int top;
-	int size;
+	private Stack<Integer> stack;
+	int min;
 
     /** initialize your data structure here. */
     public MinStack() {
-        stack = new int [DEFAULT_CAPACITY];
-        top = -1;
-        size = DEFAULT_CAPACITY;
+    	stack = new Stack<>();
+        min = Integer.MAX_VALUE;
     }
     
     public void push(int x) {
-        if (top + 1 >= size) {
-			int [] temp = new int[size * 2];
-			for (int i = 0; i < size; i++) {
-				temp[i] = stack[i];
-			}
-			stack = temp;
-			size *= 2;
+        if (x <= min) {
+        	stack.push(min);
+        	min = x;
 		}
-        top ++;
-        stack[top] = x;
+        stack.push(x);
     }
     
     public void pop() {
-        top --;
+    	if (stack.pop() == min) {
+			min = stack.pop();
+		}
     }
     
     public int top() {
-        return stack[top];
+        return stack.peek();
     }
     
     public int getMin() {
-    	int min = Integer.MAX_VALUE;
-        for (int i = 0; i <= top; i++) {
-			if (min > stack[i]) {
-				min = stack[i];
-			}
-		}
         return min;
     }
 }
