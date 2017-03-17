@@ -9,17 +9,21 @@ public class Solution {
         return nums[0];
     }
 	public int findMin_v2(int[] nums) {
-        int lo = 0, hi = nums.length - 1;
+		int lo = 0, hi = nums.length - 1;
         int mid = 0;
         while (lo < hi) {
+        	if (nums[lo] < nums[hi]) {
+				return nums[lo];
+			}
         	mid = lo + (hi - lo) / 2;
-        	if (nums[mid] < nums[lo]) {
-				//left
-        		hi = mid;
+        	if (nums[mid] >= nums[lo]) {
+        		//right
+        		lo = mid + 1;
 			} else {
-				lo = mid;
+				//left
+				hi = mid;
 			}
 		}
-        return nums[mid];
+        return nums[lo];
     }
 }
