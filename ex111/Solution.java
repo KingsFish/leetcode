@@ -1,5 +1,7 @@
 package leetcode.ex111;
 
+import leetcode.TreeNode;
+
 public class Solution {
 
 	int depth = Integer.MAX_VALUE;

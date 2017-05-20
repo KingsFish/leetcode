@@ -40,13 +40,6 @@ public class Solution {
     	add('n');
     	add('m');
     }};
-	public static void main(String[] args) {
-		String [] words = new String[]{"asdfghjkl","qwertyuiop","zxcvbnm"};
-		words = new Test().findWords(words);
-		for (String string : words) {
-			System.out.print(string + ",");
-		}
-	}
 	public String[] findWords(String[] words) {
 		ArrayList<String> temp = new ArrayList<>();
 		for (int i = 0; i < words.length; i++) {

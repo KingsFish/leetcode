@@ -1,5 +1,7 @@
 package leetcode.ex110;
 
+import leetcode.TreeNode;
+
 public class Solution {
 
 	boolean isBalanced = true;

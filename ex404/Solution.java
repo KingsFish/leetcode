@@ -1,5 +1,7 @@
 package leetcode.ex404;
 
+import leetcode.TreeNode;
+
 public class Solution {
 
 	public int sumOfLeftLeaves(TreeNode root) {

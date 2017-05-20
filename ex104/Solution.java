@@ -1,5 +1,7 @@
 package leetcode.ex104;
 
+import leetcode.TreeNode;
+
 public class Solution {
 
 	int depth = 0;
