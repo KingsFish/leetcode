@@ -3,6 +3,9 @@ package leetcode.ex33;
 public class Solution {
 
 	public int search(int[] nums, int target) {
+		if (nums.length == 0) {
+			return -1;
+		}
 		int lo = 0, hi = nums.length - 1;
 		while (lo < hi) {
 			int mid = lo + (hi - lo) / 2;
