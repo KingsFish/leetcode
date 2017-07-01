@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-import cn.fish.Test;
-
 public class Solution {
 
 	private final Set<Character> hs1 = new HashSet<Character>(){{

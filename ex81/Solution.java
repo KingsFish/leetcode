@@ -1,3 +1,5 @@
+package leetcode.ex81;
+
 public class Solution {
     public boolean search(int[] nums, int target) {
 		if (nums.length == 0) return false;

@@ -1,3 +1,5 @@
+package leetcode.ex453;
+
 public class Solution{
 	public int minMoves(int[] nums) {
         int sum = 0, min = Integer.MAX_VALUE;
