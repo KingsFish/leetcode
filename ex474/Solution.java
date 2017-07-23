@@ -2,6 +2,25 @@ package leetcode.ex474;
 
 public class Solution {
 
+	//time O(lmn), space O(mn)
+	
+	public int findMaxForm_v1(String[] strs, int m, int n){
+		int l = strs.length;
+        int [][] dp = new int[m + 1][n + 1];     
+        for (int i = 0; i < l; i ++){
+            int [] nums = getNum(strs[i]);
+            for (int j = m; j >= nums[0]; j --){
+                for (int k = n; k >= nums[1]; k --){
+                    dp[j][k] = Math.max(dp[j][k], dp[j - nums[0]][k - nums[1]] + 1);
+                    
+                }
+            }
+        }
+        return dp[m][n];
+	}
+	
+	
+	// time O(lmn), space O(lmn)
 	public int findMaxForm(String[] strs, int m, int n) {
         int l = strs.length;
         int [][][] d = new int[l + 1][m + 1][n + 1];     
