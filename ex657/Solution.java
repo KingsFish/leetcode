@@ -1,4 +1,6 @@
+package leetcode.ex657;
 public class Solution {
+	
     public boolean judgeCircle(String moves) {
         int verti = 0, hori = 0;
         for (char c : moves.toCharArray()){

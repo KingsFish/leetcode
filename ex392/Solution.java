@@ -1,3 +1,4 @@
+package leetcode.ex392;
 public class Solution {
     public boolean isSubsequence(String s, String t) {
         char [] sub = s.toCharArray();
