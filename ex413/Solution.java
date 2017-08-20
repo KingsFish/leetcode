@@ -1,4 +1,4 @@
-package leetcode.ex413
+package leetcode.ex413;
 
 public class Solution {
     public int numberOfArithmeticSlices(int[] A) {
