@@ -1,5 +1,7 @@
 package leetcode.ex71;
 
+import java.util.Stack;
+
 public class Solution{
     public String simplifyPath(String path) {
         String [] strs = path.split("/");

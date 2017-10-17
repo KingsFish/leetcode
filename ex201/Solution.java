@@ -1,4 +1,4 @@
-package leetcoe.ex201;
+package leetcode.ex201;
 
 public class Solution {
     public int rangeBitwiseAnd(int m, int n) {

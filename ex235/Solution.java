@@ -1,5 +1,7 @@
 package leetcode.ex235;
 
+import leetcode.TreeNode;
+
 public class Solution{
     
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {

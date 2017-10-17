@@ -1,8 +1,5 @@
 package leetcode.ex61;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class Solution {
 	
 	public static void main(String[] args) {

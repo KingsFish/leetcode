@@ -1,5 +1,7 @@
 package leetcode.ex594;
 
+import java.util.HashMap;
+
 public class Solution{
     public int findLHS(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap<>();

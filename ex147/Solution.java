@@ -1,5 +1,7 @@
 package leetcode.ex147;
 
+import leetcode.ListNode;
+
 public class Solution {
     public ListNode insertionSortList(ListNode head) {
         ListNode result = head;

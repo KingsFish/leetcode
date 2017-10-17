@@ -1,7 +1,5 @@
 package leetcode.ex300;
 
-import java.util.Arrays;
-
 public class Solution {
 
 	public int lengthOfLIS(int[] nums) {
