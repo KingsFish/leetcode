@@ -1,6 +1,7 @@
 package leetcode.ex398;
 
 import java.util.HashMap;
+import java.util.Random;
 
 public class Solution {
 

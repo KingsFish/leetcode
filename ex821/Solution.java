@@ -1,6 +1,7 @@
 package leetcode.ex821;
 
-import java.utils.ArrayList;
+import java.util.ArrayList;
+import java.util.List;
 
 class Solution {
     public int[] shortestToChar(String S, char C) {

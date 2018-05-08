@@ -1,5 +1,8 @@
 package leetcode.ex728;
 
+import java.util.List;
+import java.util.ArrayList;
+
 public class Solution {
     public List<Integer> selfDividingNumbers(int left, int right) {
         List<Integer> result = new ArrayList<>();

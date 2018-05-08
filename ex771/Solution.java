@@ -1,6 +1,6 @@
 package leetcode.ex771;
 
-import java.utils.HashSet;
+import java.util.HashSet;
 
 class Solution {
     public int numJewelsInStones(String J, String S) {

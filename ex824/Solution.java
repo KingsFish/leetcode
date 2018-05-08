@@ -1,7 +1,5 @@
 package leetcode.ex824;
 
-import java.utils.StringBuilder;
-
 class Solution {
     public String toGoatLatin(String S) {
         if (S.equals("")) {

@@ -1,5 +1,8 @@
 package leetcode.ex539;
 
+import java.util.Arrays;
+import java.util.List;;
+
 public class Solution {
     public int findMinDifference(List<String> timePoints) {
         int result = 12 * 60 + 1;

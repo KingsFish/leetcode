@@ -1,5 +1,7 @@
 package leetcode.ex452;
 
+import java.util.Arrays;
+
 public class Solution {
     public int findMinArrowShots(int[][] points) {
         Arrays.sort(points, (a, b) -> a[1] - b[1]);

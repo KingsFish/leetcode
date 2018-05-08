@@ -1,6 +1,6 @@
 package leetcode.ex804;
 
-import java.utils.HashSet;
+import java.util.HashSet;
 
 class Solution {
     public int uniqueMorseRepresentations(String[] words) {

@@ -1,5 +1,7 @@
 package leetcode.ex421;
 
+import java.util.HashSet;
+
 public class Solution {
     public int findMaximumXOR(int[] nums) {
         int max = 0;

@@ -1,7 +1,5 @@
 package leetcode.ex831;
 
-import java.utils.StringBuilder;
-
 class Solution {
     public String maskPII(String S) {
         S = S.toLowerCase();

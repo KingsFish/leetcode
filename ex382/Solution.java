@@ -1,6 +1,8 @@
 package leetcode.ex382;
 
 
+import java.util.Random;
+
 import leetcode.ListNode;
 
 public class Solution {

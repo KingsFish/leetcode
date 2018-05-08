@@ -1,6 +1,8 @@
 package leetcode.ex811;
 
-import java.utils.HashMap;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;;
 
 class Solution {
     public List<String> subdomainVisits(String[] cpdomains) {

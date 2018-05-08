@@ -1,5 +1,9 @@
 package leetcode.ex690;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 public class Solution {
     public int getImportance(List<Employee> employees, int id) {
         int result = 0;

@@ -1,7 +1,7 @@
 package leetcode.ex830;
 
-import java.utils.List;
-import java.utils.ArrayList;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Solution {
     public List<List<Integer>> largeGroupPositions(String S) {
