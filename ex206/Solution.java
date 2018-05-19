@@ -37,4 +37,16 @@ public class Solution {
         stack[0].next = null;
         return stack[stack.length - 1];
     }
+    
+    // 循环
+    public ListNode reverseList(ListNode head) {
+        ListNode pre = null, next = null, cur = head;
+        while(cur != null) {
+            next = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = next;
+        }
+        return pre;
+    }
 }
