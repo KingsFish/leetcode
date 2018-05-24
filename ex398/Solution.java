@@ -6,7 +6,7 @@ import java.util.Random;
 public class Solution {
 
     HashMap<Integer, String> set = new HashMap<>();
-    int [] num;
+    int [] nums;
     Random rnd;
     public Solution(int[] nums) {
         //553ms

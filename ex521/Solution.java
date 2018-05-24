@@ -1,4 +1,6 @@
-class Solution {
+package leetcode.ex521;
+
+public class Solution {
     // it's just a joke
     public int findLUSlength(String a, String b) {
         if (a.equals(b)) {
