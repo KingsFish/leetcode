@@ -46,4 +46,26 @@ public class Solution{
         nums[i] = nums[j];
         nums[j] = tmp;
     }
+    
+    public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        permutation(res, nums, 0);
+        return res;
+    }
+    
+    private void permutation(List<List<Integer>> res, int [] nums, int start){
+        if (start == nums.length - 1) {
+            ArrayList<Integer> tmp = new ArrayList<>();
+            for (int i : nums) {
+                tmp.add(i);
+            }
+            res.add(tmp);
+        }
+        
+        for (int i = start; i < nums.length; i ++) {
+            swap(nums, start, i);
+            permutation(res, nums, start + 1);
+            swap(nums, start, i);
+        }
+    }
 }
