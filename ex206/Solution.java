@@ -2,17 +2,8 @@ package leetcode.ex206;
 
 public class Solution {
 
-	public static void main(String[] args) {
-		ListNode node = new ListNode(1);
-		node.next = null;
-		ListNode head = reverseList(node);
-		while (head != null) {
-			System.out.print(head.val + ",");
-			head = head.next;
-		}
-	}
 	
-	public static ListNode reverseList(ListNode head) {
+	public ListNode reverseList(ListNode head) {
 		int size = 0;
 		ListNode head_bak = head;
         while (head != null) {
@@ -39,7 +30,7 @@ public class Solution {
     }
     
     // 循环
-    public ListNode reverseList(ListNode head) {
+    public ListNode reverseList_v2(ListNode head) {
         ListNode pre = null, next = null, cur = head;
         while(cur != null) {
             next = cur.next;

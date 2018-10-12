@@ -47,7 +47,7 @@ public class Solution{
         nums[j] = tmp;
     }
     
-    public List<List<Integer>> permute(int[] nums) {
+    public List<List<Integer>> permute_v2(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         permutation(res, nums, 0);
         return res;

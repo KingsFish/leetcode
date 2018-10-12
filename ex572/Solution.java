@@ -1,5 +1,7 @@
 package leetcode.ex572;
 
+import leetcode.TreeNode;
+
 class Solution {
     boolean result = false;
     public boolean isSubtree(TreeNode s, TreeNode t) {
